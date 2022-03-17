@@ -1,4 +1,4 @@
-% Script to run the Mass Spring Damper 
+% Script to run the Mass Spring Damper
  
 % Parameters
 m = 1
