@@ -4,17 +4,17 @@
 
 figure(1)
 subplot(3,1,1)
-plot(qr_out.tout,qr_out.xref,'r',qr_out.tout,@@@,'b')
+plot(qr_out.tout,qr_out.xref,'r',qr_out.tout,qr_out.x,'b')
 title('Position x [m]','FontSize',18)
 legend('reference','actual')
 grid on
 subplot(3,1,2)
-plot(qr_out.tout,qr_out.yref,'r',qr_out.tout,@@@,'b')
+plot(qr_out.tout,qr_out.yref,'r',qr_out.tout,qr_out.y,'b')
 title('Position y [m]','FontSize',18)
 legend('reference','actual')
 grid on
 subplot(3,1,3)
-plot(qr_out.tout,qr_out.thetaref*(@@@),'r',qr_out.tout,qr_out.theta*(@@@),'b')
+plot(qr_out.tout,qr_out.thetaref*(180/pi),'r',qr_out.tout,qr_out.theta*(180/pi),'b')
 title('Angle [degree]','FontSize',18)
 legend('reference','actual')
 grid on
@@ -34,15 +34,15 @@ grid on
 %% Translational and rotational velocities
 
 figure(3)
-subplot(3,1,@@@)
+subplot(3,1,1)
 plot(qr_out.tout,qr_out.vx)
 title('Velocity dx/dt [m/s]','FontSize',18)
 grid on
-subplot(@@@,1,2)
+subplot(3,1,2)
 plot(qr_out.tout,qr_out.vy)
 title('Velocity dy/dt [m/s]','FontSize',18)
 grid on
-subplot(@@@,@@@,@@@)
+subplot(3,1,3)
 plot(qr_out.tout,qr_out.vtheta)
 title('Angular velocity [rad/s]','FontSize',18)
 grid on
@@ -50,7 +50,7 @@ grid on
 %% xy-plane Position of the quadrotor
 
 figure(4)
-plot(@@@,@@@,'r--',@@@,@@@)
+plot(qr_out.tout,qr_out.tout,'r--',qr_out.x,qr_out.y)
 legend('reference','actual')
 xlabel('x [m]','FontSize',18)
 ylabel('y [m]','FontSize',18)

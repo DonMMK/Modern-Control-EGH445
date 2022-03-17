@@ -1,20 +1,20 @@
 %% Quadrotor parameters
-m=@@@;
-J= @@@;
-bt=@@@;
-g=@@@;
-l=@@@;
-lf=@@@;
-lr=@@@;
+m= 0.5; % kg
+J= 0.0112; %Kg m^2
+bt=1;   % Nms
+g= 9.8; % ms^-2
+l=0.2;  % m
+lf=0.2; % m
+lr=0.2; % m
 
 %% Set initial conditions for generalised displacements and momenta to zero
 
-cipx=@@@;
-cipy=@@@;
-ciLtheta=@@@;
-cix=@@@;
-ciy=@@@;
-citheta=@@@;
+cipx=0;
+cipy=0;
+ciLtheta=0;
+cix=0;
+ciy=0;
+citheta=0;
 
 %% reference signals
 
