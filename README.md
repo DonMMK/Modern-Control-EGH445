@@ -6,7 +6,7 @@ Week 1: Introduction
 Week 2: Mathematical Modelling and Model Conversion  
 Week 3: Analysis of State Space Models  
 Week 4: Control of LTI systems by State Feedback  
-Week 5: Control of LTI systems by Output Feedback. 
+Week 5: Control of LTI systems by Output Feedback  
 Week 6: Optimal Control  
 Week 7: Revision of Continous Time Control  
 Week 8: -  
