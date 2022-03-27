@@ -7,6 +7,7 @@
 % poly(A) - computes the characteristic polynomial when A is a square matrix.
 % poly(v) - if v is a vector, poly(v) computes the coefficients of a polynomial whose roots are the elements of v
 % roots(v) - if v is a vector interpreted as coefficients of a polynomial, roots(v) return its roots
+% ctrlb, acker, place, and rank.
 
 % Part A
 %% Parameters Set 1
