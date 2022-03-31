@@ -1,3 +1,4 @@
+%% Non Linear Model
 % Constants 
     Mc = 0.4; % kg
     m  = 0.15;% kg
@@ -9,6 +10,32 @@ Model_Constants = [Mc , m , lm , g]
 % Initial Condition
 x0_a = [0 0 0 0];
 x0_b = [0 pi 0 0];
-x0;
+x0 = x0_a;
+
+
+
+
+%% Linear Model
+% Pass the parameters to the matrices
+Aa = [0 , 0 , 1 , 0; 
+     0 , 0, 0 , 1;
+     0 , (-g*m)/Mc , 0 , 0];
+
+Ab = [];
+
+Ba = [0 , 0 , 1/Mc , -1/(lm * Mc)];
+
+
+Bb = [];
+
+C;
+
+D;
+
+
+
+
+%% Out to Simulink Model
 
 out = sim('Cart_Pendulum_Non_Linear');
+out = sim('Cart_Pendulum_Linear');
