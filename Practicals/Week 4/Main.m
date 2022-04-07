@@ -51,4 +51,4 @@ x0_a = [0.2 , (20*pi)/180 , 0 , 0]';
 %% Out to Simulink Model
 
 out = sim('Cart_Pendulum_Non_Linear');
-out = sim('Cart_Pendulum_Linear');
+out2 = sim('Cart_Pendulum_Linear');
